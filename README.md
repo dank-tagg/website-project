@@ -1,2 +1,7 @@
 # Website project
-This repository is for my school project. 
+This repository is for my school website project.
+
+## All links
+- [Trello](https://trello.com/b/n1RzgrFO/school)
+- [GitHub](https://github.com/dank-tagg/website-project/)
+
