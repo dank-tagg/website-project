@@ -1,9 +1,10 @@
 html {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: sans-serif;
 }
 
 table {
     border-collapse: collapse;
+    max-width: 40%;
 }
 
 td, th {
