@@ -12,3 +12,13 @@ td, th {
     text-align: left;
     padding: 8px;
   }
+
+div.navbar-right {
+    float: right;
+    margin-right:1em;
+}
+
+div.navbar-left {
+    float: left;
+    margin-left:1em;
+}
