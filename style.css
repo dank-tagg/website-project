@@ -1,5 +1,43 @@
+/* Colors */
+:root {
+    --bg: #fff;
+    --btn: #f8f8f8;
+    --headers: #159957;
+    --text: #606c71;
+    --links: #1e6bb8;
+    --contrast: #ece9e9;
+}
+
+[data-theme="dark"] {
+    --bg: #353941;
+    --btn: #2c2f33;
+    --headers: #7289DA;
+    --text: #99AAB5;
+    --links: #7289DA;
+    --contrast: #787f88;
+}
+
+
+/* Styling */
+
 html {
-    font-family: sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.15em;
+}
+
+
+body {
+    margin: 0;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--headers)
+}
+
+a {
+    color: var(--links)
 }
 
 table {
@@ -13,12 +51,39 @@ td, th {
     padding: 8px;
   }
 
-div.navbar-right {
-    float: right;
-    margin-right:1em;
+
+
+/* Navbar */
+
+nav {
+    width: 100%;
+    border-radius: 12em;
+    height: 50px;
 }
 
-div.navbar-left {
+.navbar {
+    background-color: var(--bg);
+    overflow: hidden;
+    box-shadow: 0 6px 4px -1px rgba(0,0,0,0.25);
+}
+
+.navbar a, button, input {
+    border-color: rgba(255,255,255,0.2);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 12rem;
+
+    font-family: inherit;
+    font-size: inherit;
     float: left;
-    margin-left:1em;
+    text-align: center;
+    margin: 0.4em;
+    padding: 0.4em;
+    text-decoration: none;
+    color: var(--text);
+    background-color: var(--btn)
+}
+
+.navbar-right {
+    float: right;
 }
