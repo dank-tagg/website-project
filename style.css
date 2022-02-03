@@ -2,9 +2,9 @@
 :root {
     --bg: #fff;
     --btn: #f8f8f8;
-    --headers: #159957;
+    --headers: #37a987;
     --text: #606c71;
-    --links: #1e6bb8;
+    --links: #4b3d8f;
     --contrast: #ece9e9;
 }
 
@@ -22,7 +22,7 @@
 
 html {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.15em;
+    font-size: 1.1em;
 }
 
 
@@ -57,14 +57,16 @@ td, th {
 
 nav {
     width: 100%;
-    border-radius: 12em;
-    height: 50px;
+    overflow:visible;
+    position:fixed;
 }
 
 .navbar {
     background-color: var(--bg);
     overflow: hidden;
     box-shadow: 0 6px 4px -1px rgba(0,0,0,0.25);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
 .navbar a, button, input {
@@ -86,4 +88,63 @@ nav {
 
 .navbar-right {
     float: right;
+}
+
+/* Homepage */
+
+.header {
+    height: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    padding: 5rem 6rem;
+    height: 100vh;
+    color: #fff;
+    text-align: left;
+    z-index: 99;
+    background-color: #159957;
+    background-image: linear-gradient(124deg, var(--links), var(--headers));
+}
+
+.header h1 {
+    color: #fff;
+    font-size: 3.25rem;
+    margin-top: 14rem;
+    margin-bottom: 0.1rem;
+    margin-left: 2em;
+}
+
+.header h2 {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    font-weight: normal;
+    margin-left: 5.3em;
+}
+
+.header h3 {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    font-weight: normal;
+    margin-left: 6.5em;
+}
+
+.header a {
+    display: inline-block;
+    color: #fff;
+
+    border-color: rgba(255,255,255,0.2);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 12rem;
+
+    text-decoration: none;
+    margin-left: 6.4em;
+    padding: 0.75rem 1rem;
+}
+
+.header img {
+    float: right;
+    position: relative;
+    top: -430px;
 }
