@@ -108,7 +108,7 @@ nav {
 .header h1 {
     color: #fff;
     font-size: 3.25rem;
-    margin-top: 14rem;
+    margin-top: 9rem;
     margin-bottom: 0.1rem;
     margin-left: 2em;
 }
@@ -145,6 +145,7 @@ nav {
 
 .header img {
     float: right;
-    position: relative;
-    top: -430px;
+    position: fixed;
+    top: 90px;
+    left: 800px;
 }
