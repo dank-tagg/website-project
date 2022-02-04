@@ -149,3 +149,9 @@ nav {
     top: 90px;
     left: 800px;
 }
+
+/* Info.html */
+.content {
+    padding-top: 3rem;
+    padding-left: 1rem;
+}
