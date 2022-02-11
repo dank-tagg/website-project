@@ -85,6 +85,12 @@ nav {
     background-color: var(--btn)
 }
 
+.navbar a:hover {
+    text-decoration: none;
+    background-color: var(--contrast);
+    border-color: rgba(255,255,255,0.3)
+}
+
 .navbar-right {
     float: right;
 }
