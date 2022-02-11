@@ -161,3 +161,11 @@ nav {
     max-width: 50%;
     height: auto;
 }
+
+/* Contact.html */
+.contact {
+    width: 800px;
+    word-break: break-word;
+    padding-top: 3rem;
+    padding-left: 15rem;
+}
