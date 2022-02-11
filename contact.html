@@ -22,7 +22,44 @@
             </div>
         </nav>
         <div class="contact">
-
+            <h1>Contact Me</h1>
+            <p>If you have any questions left please fill out this form so I can reach you as fast as possible.</p>
+            <form action="#">
+                <fieldset>
+                    <strong>Full name</strong>
+                    <br>
+                    <input required type="text" id="name" name="name" placeholder="John Appleseed">
+                    <br><br><br>
+                    <strong>Nationality</strong>
+                    <br>
+                    <select id="Nationality" name="nationality">
+                        <option value="" disabled selected>Select your option</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="netherlands"> The Netherlands</option>
+                        <option value="belgium"> Belgium </option>
+                        <option value="germany"> Germany </option>
+                        <option value="france"> France </option>
+                        <option value="spain"> Spain </option>
+                        <option vlaue="portugal"> Portugal </option>
+                        <option vlalue="italy"> Italy </option>
+                        <option value="croatia"> Croatia </option>
+                        <option value="uk"> UK </option>
+                        <option value="swiss"> Swiss </option>
+                        <option value="austria"> Austria </option>
+                    </select>
+                    <br><br><br>
+                    <strong>Your message:</strong>
+                    <br>
+                    <textarea id=msg name="msg" rows="10" cols="100" placeholder="Write your message here..."></textarea>
+                    <br><br><br>
+                    <strong>Email-address/phone number</strong>
+                    <br>
+                    <input required type="text" id="email" name="email" placeholder="abcd@yahoo.com">
+                    <br><br><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
         </div>
     </body>
 </html>
