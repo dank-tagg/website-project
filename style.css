@@ -42,7 +42,6 @@ a {
 
 table {
     border-collapse: collapse;
-    max-width: 40%;
 }
 
 td, th {
@@ -152,6 +151,13 @@ nav {
 
 /* Info.html */
 .content {
+    width: 800px;
+    word-break: break-word;
     padding-top: 3rem;
-    padding-left: 1rem;
+    padding-left: 15rem;
+}
+
+.content img {
+    max-width: 50%;
+    height: auto;
 }
