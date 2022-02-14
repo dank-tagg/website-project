@@ -199,3 +199,11 @@ fieldset {
     border-width: 1px;
     border-radius:1rem;
 }
+
+/* About.html */
+.about {
+    width: 800px;
+    word-break: break-word;
+    padding-top: 3rem;
+    padding-left: 15rem;
+}
