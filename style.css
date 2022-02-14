@@ -166,6 +166,8 @@ nav {
 .content img {
     max-width: 50%;
     height: auto;
+    float: right;
+    margin: 0px 0px 15px 15px
 }
 
 /* Contact.html */
