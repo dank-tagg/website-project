@@ -1,4 +1,5 @@
 /* Colors */
+
 :root {
     --bg: #fff;
     --btn: #f8f8f8;
@@ -6,15 +7,6 @@
     --text: #606c71;
     --links: #4b3d8f;
     --contrast: #ece9e9;
-}
-
-[data-theme="dark"] {
-    --bg: #353941;
-    --btn: #2c2f33;
-    --headers: #7289DA;
-    --text: #99AAB5;
-    --links: #7289DA;
-    --contrast: #787f88;
 }
 
 
@@ -25,14 +17,18 @@ html {
     font-size: 1.1em;
 }
 
-
 body {
     margin: 0;
     color: var(--text);
     background-color: var(--bg);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--headers)
 }
 
@@ -44,36 +40,37 @@ table {
     border-collapse: collapse;
 }
 
-td, th {
+td,
+th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
-  }
-
+}
 
 
 /* Navbar */
 
 nav {
     width: 100%;
-    overflow:visible;
-    position:fixed;
+    overflow: visible;
+    position: fixed;
 }
 
 .navbar {
     background-color: var(--bg);
     overflow: hidden;
-    box-shadow: 0 6px 4px -1px rgba(0,0,0,0.25);
+    box-shadow: 0 6px 4px -1px rgba(0, 0, 0, 0.25);
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
 
-.navbar a, button, input{
-    border-color: rgba(255,255,255,0.2);
+.navbar a,
+button,
+input {
+    border-color: rgba(255, 255, 255, 0.2);
     border-style: solid;
     border-width: 1px;
     border-radius: 12rem;
-
     font-family: inherit;
     font-size: inherit;
     float: left;
@@ -88,18 +85,17 @@ nav {
 .navbar a:hover {
     text-decoration: none;
     background-color: var(--contrast);
-    border-color: rgba(255,255,255,0.3)
+    border-color: rgba(255, 255, 255, 0.3)
 }
 
 .navbar-right {
     float: right;
 }
 
+
 /* Homepage */
 
 .header {
-    height: 100%;
-    min-height: 100%;
     box-sizing: border-box;
     padding: 5rem 6rem;
     height: 100vh;
@@ -137,12 +133,10 @@ nav {
 .header a {
     display: inline-block;
     color: #fff;
-
-    border-color: rgba(255,255,255,0.2);
+    border-color: rgba(255, 255, 255, 0.2);
     border-style: solid;
     border-width: 1px;
     border-radius: 12rem;
-
     text-decoration: none;
     margin-left: 6.4em;
     padding: 0.75rem 1rem;
@@ -155,7 +149,9 @@ nav {
     left: 800px;
 }
 
+
 /* Info.html */
+
 .content {
     width: 800px;
     word-break: break-word;
@@ -170,7 +166,9 @@ nav {
     margin: 0px 0px 15px 15px
 }
 
+
 /* Contact.html */
+
 .contact {
     width: 800px;
     word-break: break-word;
@@ -178,12 +176,13 @@ nav {
     padding-left: 15rem;
 }
 
-.contact input, select, textarea {
-    border-color: rgba(255,255,255,0.2);
+.contact input,
+select,
+textarea {
+    border-color: rgba(255, 255, 255, 0.2);
     border-style: solid;
     border-width: 1px;
-    border-radius:1rem;
-
+    border-radius: 1rem;
     font-family: inherit;
     font-size: inherit;
     float: left;
@@ -192,20 +191,80 @@ nav {
     padding: 0.4em;
     text-decoration: none;
     color: var(--text);
-    background-color: var(--btn)
+    background-color: var(--btn);
+    resize: none;
 }
 
 fieldset {
     border-color: rgb(0 0 0 / 28%);
     border-style: solid;
     border-width: 1px;
-    border-radius:1rem;
+    border-radius: 1rem;
 }
 
+
 /* About.html */
+
 .about {
     width: 800px;
     word-break: break-word;
     padding-top: 3rem;
     padding-left: 15rem;
+}
+
+
+/* Media queries */
+
+@media(max-width: 512px) {
+    .navbar i {
+        display: none;
+    }
+}
+
+@media(max-width: 821px) {
+    html {
+        font-size: 90%;
+    }
+    .header h1,
+    h2,
+    h3,
+    a {
+        margin-left: 0 !important;
+    }
+    .contact fieldset,
+    .contact textarea {
+        width: 500px !important;
+    }
+    .navbar button,
+    .navbar input {
+        display: none;
+    }
+}
+
+@media(max-width: 1080px) {
+    .content,
+    .contact,
+    .about {
+        padding-left: 5%;
+    }
+    .contact fieldset,
+    .contact textarea {
+        width: 600px;
+    }
+    .content img {
+        display: none;
+    }
+}
+
+@media(max-width: 1323px) {
+    .contact fieldset,
+    .contact textarea {
+        width: 750px;
+    }
+}
+
+@media(max-width: 1460px) {
+    .header img {
+        display: none;
+    }
 }
