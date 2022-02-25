@@ -9,6 +9,14 @@
     --contrast: #ece9e9;
 }
 
+[theme="dark"] {
+    --bg: #353941;
+    --btn: #2c2f33;
+    --headers: #7289DA;
+    --text: #99AAB5;
+    --links: #7289DA;
+    --contrast: #787f88;
+}
 
 /* Styling */
 
