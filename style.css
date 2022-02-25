@@ -233,6 +233,15 @@ fieldset {
     }
 }
 
+@media(max-width: 709px) {
+    .about img {
+        display: none;
+    }
+    html {
+        font-size: 80% !important;
+    }
+}
+
 @media(max-width: 821px) {
     html {
         font-size: 90%;
@@ -272,11 +281,5 @@ fieldset {
     .contact fieldset,
     .contact textarea {
         width: 750px;
-    }
-}
-
-@media(max-width: 1460px) {
-    .header img {
-        display: none;
     }
 }
